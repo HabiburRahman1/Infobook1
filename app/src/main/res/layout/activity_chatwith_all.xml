@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.habib.infobook.ChatwithAll"
+    android:weightSum="1">
+
+
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="479dp"
+
+        android:id="@+id/list"
+        android:layout_weight="1"
+        tools:ignore="InefficientWeight">
+    </ListView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Write message"
+            android:layout_toLeftOf="@+id/sendmessage"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_send"
+            android:layout_alignParentRight="true"
+
+            android:id="@+id/sendmessage"
+
+
+            tools:ignore="ContentDescription,RtlHardcoded" />
+
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

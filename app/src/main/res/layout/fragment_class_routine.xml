@@ -1,0 +1,818 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.habib.infobook.ClassRoutineFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        tools:ignore="UselessParent">
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="ScrollViewSize">
+
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+
+                />
+
+            <Spinner
+                android:id="@+id/section"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/table1"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="11dp" />
+
+
+            <TableLayout
+                android:id="@+id/table1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/spinner"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                tools:ignore="ObsoleteLayoutParam,RtlHardcoded">
+
+                <TableRow android:background="@color/colorPrimary">
+
+                    <TextView
+                        android:id="@+id/r"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="8"
+                        android:fontFamily="serif"
+
+
+                        android:text="Course Code"
+                        android:textColor="@color/cardview_light_background"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:typeface="normal"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/r1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+
+                        android:fontFamily="serif"
+
+                        android:text="Course Title"
+                        android:textColor="@color/cardview_light_background"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:typeface="normal"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/r2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="8"
+
+                        android:fontFamily="serif"
+                        android:textColor="?attr/actionMenuTextColor"
+                        android:textSize="14sp"
+                        android:typeface="normal"
+
+
+                        />
+
+                    <TextView
+                        android:id="@+id/r3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+
+                        android:fontFamily="serif"
+                        android:textColor="?attr/actionMenuTextColor"
+                        android:textSize="14sp"
+                        android:typeface="normal"
+                        tools:ignore="RtlHardcoded" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/r4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="8"
+
+                        android:fontFamily="serif"
+                        android:textColor="?attr/actionMenuTextColor"
+                        android:textSize="14sp"
+                        android:typeface="normal"
+
+
+                        />
+
+                    <TextView
+                        android:id="@+id/r5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+
+                        android:fontFamily="serif"
+                        android:textColor="?attr/actionMenuTextColor"
+                        android:textSize="14sp"
+                        android:typeface="normal"
+                        tools:ignore="RtlHardcoded" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/r6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="8"
+
+                        android:fontFamily="serif"
+                        android:textColor="?attr/actionMenuTextColor"
+                        android:textSize="14sp"
+                        android:typeface="normal"
+
+
+                        />
+
+                    <TextView
+                        android:id="@+id/r7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+
+                        android:fontFamily="serif"
+                        android:textColor="?attr/actionMenuTextColor"
+                        android:textSize="14sp"
+                        android:typeface="normal"
+                        tools:ignore="RtlHardcoded" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/r8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="8"
+
+                        android:fontFamily="serif"
+                        android:textColor="?attr/actionMenuTextColor"
+                        android:textSize="14sp"
+                        android:typeface="normal"
+
+
+                        />
+
+                    <TextView
+                        android:id="@+id/r9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+
+                        android:fontFamily="serif"
+                        android:textColor="?attr/actionMenuTextColor"
+                        android:textSize="14sp"
+                        android:typeface="normal"
+                        tools:ignore="RtlHardcoded" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/r10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="8"
+
+                        android:fontFamily="serif"
+                        android:textColor="?attr/actionMenuTextColor"
+                        android:textSize="14sp"
+                        android:typeface="normal"
+
+
+                        />
+
+                    <TextView
+                        android:id="@+id/r11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+
+                        android:fontFamily="serif"
+                        android:textColor="?attr/actionMenuTextColor"
+                        android:textSize="14sp"
+                        android:typeface="normal"
+                        tools:ignore="RtlHardcoded" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/r12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="8"
+
+                        android:fontFamily="serif"
+                        android:textColor="?attr/actionMenuTextColor"
+                        android:textSize="14sp"
+                        android:typeface="normal"
+
+
+                        />
+
+                    <TextView
+                        android:id="@+id/r13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+
+                        android:fontFamily="serif"
+                        android:textColor="?attr/actionMenuTextColor"
+                        android:textSize="14sp"
+                        android:typeface="normal"
+                        tools:ignore="RtlHardcoded" />
+
+                </TableRow>
+
+
+            </TableLayout>
+
+
+            <TableLayout
+                android:id="@+id/table2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/section"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="15dp"
+                tools:ignore="ObsoleteLayoutParam,RtlHardcoded">
+
+                <TableRow android:background="@color/colorPrimary">
+
+                    <TextView
+                        android:id="@+id/day"
+                        android:layout_marginRight="5dp"
+                        android:text="Day"
+
+                        android:textColor="@color/cardview_light_background"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/time"
+                        android:layout_marginRight="5dp"
+                        android:text="Time"
+
+                        android:textColor="@color/cardview_light_background"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/Course"
+                        android:layout_marginRight="5dp"
+                        android:text="Course code"
+
+                        android:textColor="@color/cardview_light_background"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/Teacher"
+                        android:layout_marginRight="5dp"
+                        android:text="Teacher Intial"
+
+                        android:textAlignment="textStart"
+                        android:textColor="@color/cardview_light_background"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/Room"
+                        android:layout_marginRight="5dp"
+                        android:text="Room"
+
+                        android:textColor="@color/cardview_light_background"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/day1"
+
+                        android:layout_marginRight="5dp"
+
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/time1"
+
+                        android:layout_marginRight="5dp"
+
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/Course1"
+
+                        android:layout_marginRight="5dp"
+
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/Teacher1"
+
+                        android:layout_marginRight="5dp"
+
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/Room1"
+
+                        android:layout_marginRight="5dp"
+
+                        tools:ignore="RtlHardcoded" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/day2"
+
+                        android:layout_marginRight="5dp"
+
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/time2"
+
+                        android:layout_marginRight="5dp"
+
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/Course2"
+
+                        android:layout_marginRight="5dp"
+
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/Teacher2"
+
+                        android:layout_marginRight="5dp"
+
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/Room2"
+
+                        android:layout_marginRight="5dp"
+
+                        tools:ignore="RtlHardcoded" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/day3"
+
+                        android:layout_marginRight="5dp"
+
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/time3"
+
+                        android:layout_marginRight="5dp"
+
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/Course3"
+
+                        android:layout_marginRight="5dp"
+
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/Teacher3"
+                        android:layout_marginRight="5dp"
+
+
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/Room3"
+
+                        android:layout_marginRight="5dp"
+
+                        tools:ignore="RtlHardcoded" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/day4"
+
+                        android:layout_marginRight="5dp"
+
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/time4"
+
+                        android:layout_marginRight="5dp"
+
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/Course4"
+
+                        android:layout_marginRight="5dp"
+
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/Teacher4"
+
+                        android:layout_marginRight="5dp"
+
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/Room4"
+
+                        android:layout_marginRight="5dp"
+
+                        tools:ignore="RtlHardcoded" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/day5"
+
+                        android:layout_marginRight="5dp"
+
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/time5"
+
+                        android:layout_marginRight="5dp"
+
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/Course5"
+
+                        android:layout_marginRight="5dp"
+
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/Teacher5"
+
+                        android:layout_marginRight="5dp"
+
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/Room5"
+
+                        android:layout_marginRight="5dp"
+
+                        tools:ignore="RtlHardcoded" />
+
+                </TableRow>
+
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/day6"
+
+                        android:layout_marginRight="5dp"
+
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/time6"
+
+                        android:layout_marginRight="5dp"
+
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/Course6"
+
+                        android:layout_marginRight="5dp"
+
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/Teacher6"
+                        android:layout_marginRight="5dp"
+
+
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/Room6"
+
+                        android:layout_marginRight="5dp"
+
+                        tools:ignore="RtlHardcoded" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/day7"
+
+                        android:layout_marginRight="5dp"
+
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/time7"
+
+                        android:layout_marginRight="5dp"
+
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/Course7"
+
+                        android:layout_marginRight="5dp"
+
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/Teacher7"
+
+                        android:layout_marginRight="5dp"
+
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/Room7"
+
+                        android:layout_marginRight="5dp"
+
+                        tools:ignore="RtlHardcoded" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/day8"
+
+                        android:layout_marginRight="5dp"
+
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/time8"
+
+                        android:layout_marginRight="5dp"
+
+                        tools:ignore="RtlHardcoded,TooManyViews" />
+
+                    <TextView
+                        android:id="@+id/Course8"
+
+                        android:layout_marginRight="5dp"
+
+                        tools:ignore="RtlHardcoded,TooManyViews" />
+
+                    <TextView
+                        android:id="@+id/Teacher8"
+
+                        android:layout_marginRight="5dp"
+
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/Room8"
+
+                        android:layout_marginRight="5dp"
+
+                        tools:ignore="RtlHardcoded" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/day9"
+
+                        android:layout_marginRight="5dp"
+
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/time9"
+
+                        android:layout_marginRight="5dp"
+
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/Course9"
+
+                        android:layout_marginRight="5dp"
+
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/Teacher9"
+                        android:layout_marginRight="5dp"
+
+
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/Room9"
+
+                        android:layout_marginRight="5dp"
+
+                        tools:ignore="RtlHardcoded" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/day10"
+
+                        android:layout_marginRight="5dp"
+
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/time10"
+
+                        android:layout_marginRight="5dp"
+
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/Course10"
+
+                        android:layout_marginRight="5dp"
+
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/Teacher10"
+
+                        android:layout_marginRight="5dp"
+
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/Room10"
+
+                        android:layout_marginRight="5dp"
+
+                        tools:ignore="RtlHardcoded" />
+
+                </TableRow>
+
+                <TableRow
+
+                    >
+
+
+                    <TextView
+                        android:id="@+id/day11"
+
+                        android:layout_marginRight="5dp"
+
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/time11"
+
+                        android:layout_marginRight="5dp"
+
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/Course11"
+
+                        android:layout_marginRight="5dp"
+
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/Teacher11"
+
+                        android:layout_marginRight="5dp"
+
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/Room11"
+
+                        android:layout_marginRight="5dp"
+
+                        tools:ignore="RtlHardcoded" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/day12"
+
+                        android:layout_marginRight="5dp"
+
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/time12"
+
+                        android:layout_marginRight="5dp"
+
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/Course12"
+
+                        android:layout_marginRight="5dp"
+
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/Teacher12"
+
+                        android:layout_marginRight="5dp"
+
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/Room12"
+
+                        android:layout_marginRight="5dp"
+
+                        tools:ignore="RtlHardcoded" />
+
+                </TableRow>
+
+
+            </TableLayout>
+
+        </RelativeLayout>
+
+        </HorizontalScrollView>
+    </ScrollView>
+
+</RelativeLayout>

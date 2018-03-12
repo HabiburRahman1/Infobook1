@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/if_simpline_43_2305619"
+            android:title="Free Classroom"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/if_2_1757448"
+            android:title="Free Seat in Library"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/info_48"
+            android:title="About Us"
+            tools:ignore="HardcodedText" />
+    </group>
+
+    <item android:title="Communicate"
+        tools:ignore="HardcodedText">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/if_6_1757462"
+                android:title="Class Routine"
+                tools:ignore="HardcodedText" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ifmessageicon"
+                android:title="Message send" />
+        </menu>
+    </item>
+
+</menu>

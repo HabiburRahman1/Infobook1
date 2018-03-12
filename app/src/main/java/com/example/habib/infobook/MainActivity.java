@@ -1,6 +1,7 @@
 package com.example.habib.infobook;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.provider.ContactsContract;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -31,6 +32,11 @@ public class MainActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
     DatabaseReference databaseUser;
+
+    String name;
+    String nid;
+    String email;
+    String password;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
         nPassword=(EditText)findViewById(R.id.password);
         nId=(EditText)findViewById(R.id.id);
         nEmail=(EditText)findViewById(R.id.email);
+        nLogIn=(Button)findViewById(R.id.login);
 
 
 
@@ -49,6 +56,13 @@ public class MainActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         databaseUser = FirebaseDatabase.getInstance().getReference("Users");
         final ProgressDialog progress = new ProgressDialog(this);
+
+        nLogIn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, LogIn.class));
+            }
+        });
 
 
         nRegister.setOnClickListener(new View.OnClickListener() {
@@ -60,15 +74,16 @@ public class MainActivity extends AppCompatActivity {
                 progress.setMessage("Wait while loading...");
                 progress.setCancelable(false); // disable dismiss by tapping outside of the dialog
                 progress.show();
-                final String name=nName.getText().toString();
-                final String nid=nId.getText().toString();
-                final String email=nEmail.getText().toString();
-                final String password=nPassword.getText().toString();
+                name=nName.getText().toString();
+                nid=nId.getText().toString();
+                email=nEmail.getText().toString();
+                password=nPassword.getText().toString();
                 mAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(!task.isSuccessful()){
 
+                            progress.dismiss();
                             Toast.makeText(MainActivity.this,"Error",Toast.LENGTH_SHORT).show();
                         }
                         else {

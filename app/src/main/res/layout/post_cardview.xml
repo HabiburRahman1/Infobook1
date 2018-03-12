@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        tools:ignore="ObsoleteLayoutParam">
+
+        <LinearLayout
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="post"
+
+                tools:ignore="HardcodedText" />
+
+            <ImageView
+                android:id="@+id/post_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textSize="7sp"
+                android:background="@drawable/messangericon"
+                tools:ignore="ContentDescription,SmallSp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Write a comment..."
+                    android:layout_toStartOf="@+id/sendmessage"
+                    tools:ignore="HardcodedText,UnknownIdInLayout" />
+
+                <ImageButton
+                    android:id="@+id/post_your_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@android:drawable/ic_menu_send"
+                    tools:ignore="ContentDescription,RtlHardcoded"
+                    android:contentDescription="" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/commentshow"
+                    android:hint="comment will show here"
+                    android:layout_below="@id/post_your_comment"
+                    tools:ignore="HardcodedText" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
